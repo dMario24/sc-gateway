@@ -46,7 +46,7 @@ spring:
           # 3. ${HELLO_SERVICE_URI:http://localhost:8765}/hello 로 연결
           
           # Eureka에 등록된 'USER-SERVICE' 서비스로 라우팅하는 새로운 설정
-          - id: users_uuu_route # 통합된 라우트 ID
+        - id: users_users_route # 통합된 라우트 ID
           uri: lb://USER-SERVICE # USERS 서비스로 라우팅
           predicates:
             - Path=/api/users/** # 클라이언트 요청 경로 (뒤에 무엇이 오든 상관 없음)
